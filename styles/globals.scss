@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 $dominant-color: #171212;
-$complement-color: #413333;
-$accent-color: #ebb8b8;
+$complement-color: #ebb8b8;
+$accent-color: #413333;
 
 * {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  background-color: $dominant-color;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 html {
   box-sizing: border-box;
   overflow-x: hidden;   
+  background-color: $dominant-color;
+  color: $complement-color;
 }

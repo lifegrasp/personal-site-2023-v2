@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 * {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  background-color: #171212;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #171212;
+  color: #ebb8b8;
 }/*# sourceMappingURL=globals.css.map */
