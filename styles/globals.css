@@ -1,4 +1,11 @@
-html {
+* {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
+  background-color: #171212;
 }
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}/*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,15 @@
+$dominant-color: #171212;
+$complement-color: #413333;
+$accent-color: #ebb8b8;
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: $dominant-color;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;   
+}
