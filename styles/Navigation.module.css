@@ -3,7 +3,7 @@
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 .container ul li {
   font-size: 1.15rem;
