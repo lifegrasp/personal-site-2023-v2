@@ -1,0 +1,22 @@
+$dominant-color: #171212;
+$complement-color: #ebb8b8;
+$accent-color: #413333;
+
+.container {
+  ul {
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+
+    li {
+      font-size: 1.15rem;
+
+      a {
+        text-decoration: none;
+        color: $complement-color;
+      }
+    }
+  }
+}
