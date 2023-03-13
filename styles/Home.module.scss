@@ -17,8 +17,29 @@ $accent-color: #413333;
     }
 
     div {
+      // texts
       h1 {
         font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.15rem;
+        margin: 15px 0;
+      }
+
+      //   socials
+      div {
+        margin: 15px 0;
+
+        a {
+          margin: 15px;
+
+          img {
+            margin: 0;
+            width: 20px;
+            height: auto;
+          }
+        }
       }
     }
   }

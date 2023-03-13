@@ -26,8 +26,8 @@ export default function Home() {
         <Image
           src="/../public/cloud-w-beaming-smile.png"
           alt="a cloud with a beaming smile"
-          width={500}
-          height={500}
+          width={100}
+          height={100}
         />
         <div>
           <Texts />

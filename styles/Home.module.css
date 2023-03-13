@@ -11,4 +11,19 @@
 }
 .home .introduction div h1 {
   font-size: 2.5rem;
+}
+.home .introduction div p {
+  font-size: 1.15rem;
+  margin: 15px 0;
+}
+.home .introduction div div {
+  margin: 15px 0;
+}
+.home .introduction div div a {
+  margin: 15px;
+}
+.home .introduction div div a img {
+  margin: 0;
+  width: 20px;
+  height: auto;
 }/*# sourceMappingURL=Home.module.css.map */
