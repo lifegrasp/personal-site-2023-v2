@@ -1,8 +1,47 @@
 import Head from "next/head";
-// import Image from "next/image";
-// import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import Socials from "@/components/Socials";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const Introduction = () => {
+    const Texts = () => {
+      return (
+        <>
+          <h1>Henry Hart</h1>
+          <p>
+            A web developer with a passion for creating stunning and
+            user-friendly websites.
+          </p>
+        </>
+      );
+    };
+
+    const MyResume = () => {
+      return <button>My Resume Here</button>;
+    };
+
+    return (
+      <div className={styles.introduction}>
+        <Image
+          src="/../public/cloud-w-beaming-smile.png"
+          alt="a cloud with a beaming smile"
+          width={500}
+          height={500}
+        />
+        <div>
+          <Texts />
+          <Socials />
+          <MyResume />
+        </div>
+      </div>
+    );
+  };
+
+  const Projects = () => {
+    return <h1>For Projects</h1>;
+  };
+
   return (
     <>
       <Head>
@@ -12,7 +51,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Home page!</h1>
+        <div className={styles.home}>
+          <Introduction />
+          <Projects />
+        </div>
       </main>
     </>
   );
