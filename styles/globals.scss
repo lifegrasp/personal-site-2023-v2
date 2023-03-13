@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap");
 
 $dominant-color: #171212;
-$complement-color: #ebb8b8;
+$complement-color: #c19797;
+$complement-color2: #ebb8b8;
 $accent-color: #413333;
 
 * {
@@ -18,4 +19,9 @@ html {
   overflow-x: hidden;
   background-color: $dominant-color;
   color: $complement-color;
+}
+
+h1 {
+  color: $complement-color2;
+  font-family: "Space Grotesk", sans-serif;
 }

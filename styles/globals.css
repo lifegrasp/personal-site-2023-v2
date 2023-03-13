@@ -12,5 +12,10 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: #171212;
+  color: #c19797;
+}
+
+h1 {
   color: #ebb8b8;
+  font-family: "Space Grotesk", sans-serif;
 }/*# sourceMappingURL=globals.css.map */

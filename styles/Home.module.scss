@@ -1,0 +1,25 @@
+$dominant-color: #171212;
+$complement-color: #c19797;
+$complement-color2: #ebb8b8;
+$accent-color: #413333;
+
+.home {
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 200px 0;
+      width: 250px;
+      height: auto;
+    }
+
+    div {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
