@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Socials from "@/components/Socials";
 import styles from "../styles/Home.module.css";
 
@@ -18,7 +19,11 @@ export default function Home() {
     };
 
     const MyResume = () => {
-      return <button>My Resume Here</button>;
+      return (
+        <Link className={styles.resume} href="#">
+          <p>See my résumé</p>
+        </Link>
+      );
     };
 
     return (
@@ -26,8 +31,8 @@ export default function Home() {
         <Image
           src="/../public/cloud-w-beaming-smile.png"
           alt="a cloud with a beaming smile"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
         />
         <div>
           <Texts />
