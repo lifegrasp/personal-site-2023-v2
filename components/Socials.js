@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Socials.module.css"
 
 export default function Socials() {
   return (
-    <div>
+    <div className={styles.socials}>
       <Link href="#">
         <Image
           src="/../public/svg/github.svg"

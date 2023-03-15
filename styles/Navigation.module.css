@@ -1,14 +1,14 @@
-.container ul {
+.navigation ul {
   padding: 20px;
   display: flex;
   list-style: none;
   justify-content: center;
   gap: 50px;
 }
-.container ul li {
+.navigation ul li {
   font-size: 1.15rem;
 }
-.container ul li a {
+.navigation ul li a {
   text-decoration: none;
   color: #c19797;
 }/*# sourceMappingURL=Navigation.module.css.map */

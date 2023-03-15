@@ -1,0 +1,20 @@
+$dominant-color: #171212;
+$complement-color: #c19797;
+$complement-color2: #ebb8b8;
+$accent-color: #836900;
+$accent-color2: #ae8b00;
+
+.socials {
+  margin: 30px 15px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  a {
+    img {
+      margin: 0;
+      width: 25px;
+      height: auto;
+    }
+  }
+}

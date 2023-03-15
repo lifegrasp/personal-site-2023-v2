@@ -1,0 +1,11 @@
+.socials {
+  margin: 30px 15px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.socials a img {
+  margin: 0;
+  width: 25px;
+  height: auto;
+}/*# sourceMappingURL=Socials.module.css.map */

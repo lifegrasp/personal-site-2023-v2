@@ -3,7 +3,7 @@ import styles from "../styles/Navigation.module.css";
 
 export default function Navigation() {
   return (
-    <nav className={styles.container}>
+    <nav className={styles.navigation}>
       <ul>
         <li>
           <Link href="/">Home</Link>

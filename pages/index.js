@@ -6,29 +6,32 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const Introduction = () => {
-    const Texts = () => {
-      return (
-        <>
-          <h1 className={styles.introTitle}>Henry Hart</h1>
-          <p className={styles.introTitleText}>
+    return (
+      <div className={styles.introduction}>
+        {/* intro item 1 */}
+        <Image
+        className={styles.itemOne}
+          src="/../public/cloud-w-beaming-smile.png"
+          alt="a cloud with a beaming smile"
+          width={500}
+          height={500}
+        />
+
+        {/* intro item 2 */}
+        <div className={styles.itemTwo}>
+          <h1>Henry Hart</h1>
+          <p>
             A web developer with a passion for creating stunning and
             user-friendly websites.
           </p>
-        </>
-      );
-    };
+          <Socials />
+          <Link href="#">
+            <p>See my résumé</p>
+          </Link>
+        </div>
 
-    const MyResume = () => {
-      return (
-        <Link className={styles.resume} href="#">
-          <p>See my résumé</p>
-        </Link>
-      );
-    };
-
-    const Bio = () => {
-      return (
-        <div className={styles.bio}>
+        {/* intro item 3 */}
+        <div className={styles.itemThree}>
           <h2>Bio</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,35 +50,28 @@ export default function Home() {
             mauris.
           </p>
         </div>
-      );
-    };
-
-    return (
-      <div className={styles.introduction}>
-        {/* intro item 1 */}
-        <Image
-          src="/../public/cloud-w-beaming-smile.png"
-          alt="a cloud with a beaming smile"
-          width={500}
-          height={500}
-        />
-
-        {/* intro item 2 */}
-        {/* <div className={styles.introItemTwo}> */}
-        <div>
-          <Texts />
-          <Socials />
-          <MyResume />
-        </div>
-
-        {/* intro item 3 */}
-        <Bio />
       </div>
     );
   };
 
   const Projects = () => {
-    return <h1>For Projects</h1>;
+    const Project = () => {
+      return (
+        <Link href="#">
+          <div>Placeholder for Project</div>
+        </Link>
+      );
+    };
+
+    return (
+      <div className={styles.projects}>
+        <h2>Projects</h2>
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+      </div>
+    );
   };
 
   return (
