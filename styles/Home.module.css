@@ -3,20 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 .home .introduction img {
-  margin: 200px 0;
+  margin: 125px 0;
   width: 250px;
   height: auto;
 }
-.home .introduction div {
-  margin: 15px 0;
-}
-.home .introduction div h1 {
+.home .introduction div .introTitle {
   font-size: 2.5rem;
 }
-.home .introduction div p {
-  font-size: 1.15rem;
+.home .introduction div .introTitleText {
+  font-size: 1.2rem;
   margin: 15px 0;
 }
 .home .introduction div div {

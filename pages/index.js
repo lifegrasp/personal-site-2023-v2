@@ -9,8 +9,8 @@ export default function Home() {
     const Texts = () => {
       return (
         <>
-          <h1>Henry Hart</h1>
-          <p>
+          <h1 className={styles.introTitle}>Henry Hart</h1>
+          <p className={styles.introTitleText}>
             A web developer with a passion for creating stunning and
             user-friendly websites.
           </p>
@@ -26,19 +26,50 @@ export default function Home() {
       );
     };
 
+    const Bio = () => {
+      return (
+        <div className={styles.bio}>
+          <h2>Bio</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
+            gravida in fermentum et sollicitudin ac orci phasellus egestas.
+            Ornare suspendisse sed nisi lacus. Sit amet est placerat in egestas
+            erat imperdiet. Vitae purus faucibus ornare suspendisse sed nisi
+            lacus sed. Mauris vitae ultricies leo integer malesuada nunc vel
+            risus commodo. Vestibulum rhoncus est pellentesque elit ullamcorper.
+            Odio ut enim blandit volutpat maecenas. Lobortis feugiat vivamus at
+            augue. Ullamcorper dignissim cras tincidunt lobortis feugiat
+            vivamus. Vitae congue eu consequat ac felis donec. Fermentum dui
+            faucibus in ornare quam viverra. Eget lorem dolor sed viverra ipsum
+            nunc. At in tellus integer feugiat scelerisque varius morbi enim
+            nunc. Sit amet venenatis urna cursus eget nunc scelerisque viverra
+            mauris.
+          </p>
+        </div>
+      );
+    };
+
     return (
       <div className={styles.introduction}>
+        {/* intro item 1 */}
         <Image
           src="/../public/cloud-w-beaming-smile.png"
           alt="a cloud with a beaming smile"
           width={500}
           height={500}
         />
+
+        {/* intro item 2 */}
+        {/* <div className={styles.introItemTwo}> */}
         <div>
           <Texts />
           <Socials />
           <MyResume />
         </div>
+
+        {/* intro item 3 */}
+        <Bio />
       </div>
     );
   };

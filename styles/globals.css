@@ -18,4 +18,13 @@ html {
 h1 {
   color: #ebb8b8;
   font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  color: #ebb8b8;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  margin: 10px 0;
 }/*# sourceMappingURL=globals.css.map */
