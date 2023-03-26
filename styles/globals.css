@@ -15,16 +15,10 @@ html {
   color: #c19797;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h6 {
   color: #ebb8b8;
   font-family: "Space Grotesk", sans-serif;
-}
-
-h2 {
-  color: #ebb8b8;
-  font-family: "Space Grotesk", sans-serif;
-}
-
-p {
-  margin: 10px 0;
 }/*# sourceMappingURL=globals.css.map */

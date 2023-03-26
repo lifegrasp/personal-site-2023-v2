@@ -33,14 +33,57 @@
   border-radius: 25px;
   font-size: 1.25rem;
 }
-.home .projects a {
+.home .introduction .itemThree {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.home .repository {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.home .repository a {
   text-decoration: none;
 }
-.home .projects a div {
+.home .repository a .repo {
   margin: 0;
-  padding: 20px 0;
-  text-align: center;
-  color: #836900;
-  border: 2px solid #836900;
-  border-radius: 25px;
+  height: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #836900;
+  border-radius: 10px;
+}
+.home .repository a .repo .repoRow {
+  padding: 0;
+  display: grid;
+  border: none;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: "itemOne itemTwo itemThree";
+  grid-gap: 10px;
+  align-items: center;
+}
+.home .repository a .repo .repoRow .repoRowOne {
+  width: 20px;
+  height: auto;
+  border-radius: 50%;
+  grid-area: itemOne;
+}
+.home .repository a .repo .repoRow .repoRowTwo {
+  font-size: 0.8rem;
+  grid-area: itemTwo;
+}
+.home .repository a .repo .repoRow .repoRowThree {
+  width: 20px;
+  height: auto;
+  grid-area: itemThree;
+}
+.home .repository a .repo h3 {
+  color: #ebb8b8;
+}
+.home .repository a .repo p {
+  color: #c19797;
 }/*# sourceMappingURL=Home.module.css.map */

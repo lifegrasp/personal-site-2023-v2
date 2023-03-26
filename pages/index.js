@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +11,7 @@ export default function Home() {
       <div className={styles.introduction}>
         {/* intro item 1 */}
         <Image
-        className={styles.itemOne}
+          className={styles.itemOne}
           src="/../public/cloud-w-beaming-smile.png"
           alt="a cloud with a beaming smile"
           width={500}
@@ -54,22 +55,93 @@ export default function Home() {
     );
   };
 
-  const Projects = () => {
-    const Project = () => {
+  const Repositories = () => {
+    const Repo = ({ user, repo }) => {
+      const [repoData, setRepoData] = useState(null);
+      const [loading, setLoading] = useState(false);
+
+      useEffect(() => {
+        async function fetchData() {
+          setLoading(true);
+          const response = await fetch(
+            `https://api.github.com/repos/${user}/${repo}`
+          );
+          const data = await response.json();
+          setRepoData(data);
+          setLoading(false);
+        }
+        fetchData();
+      }, [user, repo]);
+
+      if (loading) {
+        return <p>Loading...</p>;
+      }
+
+      if (!repoData) {
+        return null;
+      }
+
+      return (
+        <Link href={repoData.html_url} target="_blank">
+          <div className={styles.repo}>
+            <div className={styles.repoRow}>
+              <Image
+                className={styles.repoRowOne}
+                src={repoData.owner.avatar_url}
+                width={300}
+                height={300}
+              />
+              <p className={styles.repoRowTwo}>{repoData.owner.login}</p>
+              <Image
+                className={styles.repoRowThree}
+                src="/../public/svg/link.svg"
+                width={300}
+                height={300}
+              />
+            </div>
+            <h3 className={styles.repoTitle}>{repoData.name}</h3>
+            <p className={styles.repoDesc}>{repoData.description}</p>
+            {/* TODO: have the main language of the repo displayed and its color as well  */}
+          </div>
+        </Link>
+      );
+    };
+
+    const Placeholder = () => {
       return (
         <Link href="#">
-          <div>Placeholder for Project</div>
+          <div className={styles.repo}>
+            <div className={styles.repoRow}>
+              <Image
+                className={styles.repoRowOne}
+                src="/../public/svg/user.svg"
+                width={300}
+                height={300}
+              />
+              <p className={styles.repoRowTwo}>Author</p>
+              <Image
+                className={styles.repoRowThree}
+                src="/../public/svg/link.svg"
+                width={300}
+                height={300}
+              />
+            </div>
+            <h3 className={styles.repoTitle}>Project Name</h3>
+            <p className={styles.repoDesc}>
+              This is only a placeholder for future projects.
+            </p>
+          </div>
         </Link>
       );
     };
 
     return (
-      <div className={styles.projects}>
+      <div className={styles.repository}>
         <h2>Projects</h2>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Repo user="lifegrasp" repo="personal-site-2023-v2" />
+        <Placeholder />
+        <Placeholder />
+        <Placeholder />
       </div>
     );
   };
@@ -85,7 +157,7 @@ export default function Home() {
       <main>
         <div className={styles.home}>
           <Introduction />
-          <Projects />
+          <Repositories />
         </div>
       </main>
     </>

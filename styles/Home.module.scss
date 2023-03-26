@@ -48,20 +48,70 @@ $accent-color2: #ae8b00;
         }
       }
     }
+
+    // inro-item-3
+    .itemThree {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 
   // projects here
-  .projects {
+  .repository {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
     a {
       text-decoration: none;
 
-      div {
+      .repo {
         margin: 0;
-        padding: 20px 0;
-        text-align: center;
-        color: $accent-color;
-        border: 2px solid $accent-color;
-        border-radius: 25px;
+        height: 100%;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        border: 1px solid $accent-color;
+        border-radius: 10px;
+
+        .repoRow {
+          padding: 0;
+          display: grid;
+          border: none;
+          grid-template-columns: 20px auto 20px;
+          grid-template-areas: "itemOne itemTwo itemThree";
+          grid-gap: 10px;
+          align-items: center;
+
+          .repoRowOne {
+            width: 20px;
+            height: auto;
+            border-radius: 50%;
+            grid-area: itemOne;
+          }
+
+          .repoRowTwo {
+            font-size: 0.8rem;
+            grid-area: itemTwo;
+          }
+
+          .repoRowThree {
+            width: 20px;
+            height: auto;
+            grid-area: itemThree;
+          }
+        }
+
+        h3 {
+          color: $complement-color2;
+        }
+
+        p {
+          color: $complement-color;
+        }
       }
     }
   }
