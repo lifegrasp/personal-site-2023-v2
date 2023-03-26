@@ -146,6 +146,24 @@ export default function Home() {
     );
   };
 
+  const Quote = () => {
+    return (
+      <blockquote className={styles.quote}>
+        <p>
+          "A heart anxious to learn is natural. Chasing the unknown, craving
+          comprehension - these are a person's indelible instincts. Nothing in
+          this world can destroy the will to search for the unknown, an
+          instinctive thirst for knowledge. As a person perseveres in this
+          search, they will be able to change like a cocoon turning into a
+          butterfly."
+        </p>
+        <p>
+          - Li Qiye, <cite>Emperor's Domination</cite>
+        </p>
+      </blockquote>
+    );
+  };
+
   return (
     <>
       <Head>
@@ -158,6 +176,7 @@ export default function Home() {
         <div className={styles.home}>
           <Introduction />
           <Repositories />
+          <Quote />
         </div>
       </main>
     </>

@@ -7,7 +7,7 @@ $accent-color2: #ae8b00;
 .home {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 80px;
 
   //   introduction
   .introduction {
@@ -112,6 +112,21 @@ $accent-color2: #ae8b00;
         p {
           color: $complement-color;
         }
+      }
+    }
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+
+    p {
+      font-family: "Courgette", cursive;
+
+      cite {
+        font-family: "Courgette", cursive;
       }
     }
   }

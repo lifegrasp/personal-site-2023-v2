@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 80px;
 }
 .home .introduction {
   display: flex;
@@ -86,4 +86,16 @@
 }
 .home .repository a .repo p {
   color: #c19797;
+}
+.home .quote {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+.home .quote p {
+  font-family: "Courgette", cursive;
+}
+.home .quote p cite {
+  font-family: "Courgette", cursive;
 }/*# sourceMappingURL=Home.module.css.map */
