@@ -7,6 +7,13 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const Introduction = () => {
+    const SocialsIntro = () => {
+      return (
+        <div className={styles.introSocials}>
+          <Socials />
+        </div>
+      );
+    };
     return (
       <div className={styles.introduction}>
         {/* intro item 1 */}
@@ -25,7 +32,7 @@ export default function Home() {
             A web developer with a passion for creating stunning and
             user-friendly websites.
           </p>
-          <Socials />
+          <SocialsIntro />
           <Link href="#">
             <p>See my résumé</p>
           </Link>

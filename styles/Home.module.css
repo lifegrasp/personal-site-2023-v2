@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin: 0 15px;
 }
 .home .introduction {
   display: flex;
@@ -14,12 +15,19 @@
   width: 250px;
   height: auto;
 }
+.home .introduction .itemTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .home .introduction .itemTwo h1 {
   font-size: 2.5rem;
 }
 .home .introduction .itemTwo p {
   font-size: 1.2rem;
-  margin: 15px 0;
+}
+.home .introduction .itemTwo .introSocials {
+  margin: 15px;
 }
 .home .introduction .itemTwo a {
   text-decoration: none;
