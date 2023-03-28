@@ -3,6 +3,7 @@ $complement-color: #c19797;
 $complement-color2: #ebb8b8;
 $accent-color: #836900;
 $accent-color2: #ae8b00;
+$neutral-color: #211c1c;
 
 .home {
   display: flex;
@@ -36,7 +37,6 @@ $accent-color2: #ae8b00;
 
       p {
         font-size: 1.2rem;
-        // margin: 15px 0;
       }
 
       .introSocials {
@@ -54,6 +54,7 @@ $accent-color2: #ae8b00;
           border: 2px solid $accent-color;
           border-radius: 25px;
           font-size: 1.25rem;
+          background-color: $neutral-color;
         }
       }
     }
@@ -85,6 +86,7 @@ $accent-color2: #ae8b00;
         padding: 15px;
         border: 1px solid $accent-color;
         border-radius: 10px;
+        background-color: $neutral-color;
 
         .repoRow {
           padding: 0;
