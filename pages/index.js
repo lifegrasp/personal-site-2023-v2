@@ -42,20 +42,14 @@ export default function Home() {
         <div className={styles.itemThree}>
           <h2>Bio</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-            gravida in fermentum et sollicitudin ac orci phasellus egestas.
-            Ornare suspendisse sed nisi lacus. Sit amet est placerat in egestas
-            erat imperdiet. Vitae purus faucibus ornare suspendisse sed nisi
-            lacus sed. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus commodo. Vestibulum rhoncus est pellentesque elit ullamcorper.
-            Odio ut enim blandit volutpat maecenas. Lobortis feugiat vivamus at
-            augue. Ullamcorper dignissim cras tincidunt lobortis feugiat
-            vivamus. Vitae congue eu consequat ac felis donec. Fermentum dui
-            faucibus in ornare quam viverra. Eget lorem dolor sed viverra ipsum
-            nunc. At in tellus integer feugiat scelerisque varius morbi enim
-            nunc. Sit amet venenatis urna cursus eget nunc scelerisque viverra
-            mauris.
+            Allo ~ ! I'm Henry Hart, a web developer based in the Philippines.
+            My passion for computers started when I was just a kid, and it has
+            continued to grow ever since. I'm currently focused on learning
+            Reactjs and Nextjs, but I'm always on the lookout for new
+            technologies to explore. In the future, I'm planning to expand my
+            skillset even further and learn Svelte. I love the challenge and the
+            sense of accomplishment that comes with building something from
+            scratch, and I'm always looking for ways to improve my craft.
           </p>
         </div>
       </div>
