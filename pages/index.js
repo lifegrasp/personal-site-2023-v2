@@ -14,6 +14,7 @@ export default function Home() {
         </div>
       );
     };
+
     return (
       <div className={styles.introduction}>
         {/* intro item 1 */}
