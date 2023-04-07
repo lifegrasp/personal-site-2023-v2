@@ -34,9 +34,9 @@ export default function Home() {
             user-friendly websites.
           </p>
           <SocialsIntro />
-          <Link href="#">
+          <a href="resume.pdf" target="_blank">
             <p>See my résumé</p>
-          </Link>
+          </a>
         </div>
 
         {/* intro item 3 */}
