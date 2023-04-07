@@ -1,14 +1,27 @@
-.navigation ul {
-  padding: 20px;
+.nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
   gap: 50px;
+  padding: 30px;
 }
-.navigation ul li {
+.nav ul li {
   font-size: 1.15rem;
 }
-.navigation ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #836900;
+}
+
+.scrolled {
+  position: sticky;
+  top: 0;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+}
+.scrolled ul {
+  background-color: #211c1c;
+  border-radius: 0.8rem;
+  border: 1px solid #836900;
+  padding: 20px;
 }/*# sourceMappingURL=Navigation.module.css.map */

@@ -5,13 +5,13 @@ $accent-color: #836900;
 $accent-color2: #ae8b00;
 $neutral-color: #211c1c;
 
-.navigation {
+.nav {
   ul {
-    padding: 20px;
     display: flex;
     list-style: none;
     justify-content: center;
     gap: 50px;
+    padding: 30px;
 
     li {
       font-size: 1.15rem;
@@ -24,4 +24,16 @@ $neutral-color: #211c1c;
   }
 }
 
-// TODO: make it stick at the very top of the screen while scrolling
+.scrolled {
+  position: sticky;
+  top: 0;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+
+  ul {
+    background-color: $neutral-color;
+    border-radius: 0.8rem;
+    border: 1px solid $accent-color;
+    padding: 20px;
+  }
+}
