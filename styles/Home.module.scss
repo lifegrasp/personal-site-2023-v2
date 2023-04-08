@@ -20,9 +20,23 @@ $neutral-color: #211c1c;
 
     // intro-item-1
     .itemOne {
+      z-index: 1;
       margin: 125px 0;
       width: 250px;
       height: auto;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(30px);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(30px);
+      }
     }
 
     // intro-item-2
@@ -144,7 +158,7 @@ $neutral-color: #211c1c;
 }
 
 // TODO:
-// 
+//
 // - .itemOne animation
 // - "See my résumé" and .repo should change color to $accent-color2 when hovered
 // - .repo lift animation when hovered
