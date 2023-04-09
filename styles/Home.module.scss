@@ -11,6 +11,11 @@ $neutral-color: #211c1c;
   gap: 80px;
   margin: 0 15px;
 
+  // responsiveness for tablet
+  @media (min-width: 810px) {
+    margin: 0 100px;
+  }
+
   //   introduction
   .introduction {
     display: flex;
@@ -69,6 +74,33 @@ $neutral-color: #211c1c;
           border-radius: 25px;
           font-size: 1.25rem;
           background-color: $neutral-color;
+        }
+      }
+
+      // responsiveness for tablet
+      @media (min-width: 810px) {
+        display: grid;
+        row-gap: 15px;
+        grid-template-columns: auto auto 400px;
+        grid-template-areas:
+          "itemOne itemOne itemOne"
+          "itemTwo itemTwo itemTwo"
+          "itemThree itemFour itemFour";
+
+        h1 {
+          grid-area: itemOne;
+        }
+
+        p {
+          grid-area: itemTwo;
+        }
+
+        .introSocials {
+          grid-area: itemThree;
+        }
+
+        a {
+          grid-area: itemFour;
         }
       }
     }
@@ -159,7 +191,7 @@ $neutral-color: #211c1c;
 
 // TODO:
 //
-// - .itemOne animation
+// - .itemOne lift animation
 // - "See my résumé" and .repo should change color to $accent-color2 when hovered
 // - .repo lift animation when hovered
 // - clicking sound

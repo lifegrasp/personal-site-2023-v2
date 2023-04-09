@@ -38,4 +38,8 @@ $neutral-color: #211c1c;
     border: 1px solid $accent-color;
     padding: 20px;
   }
+
+  @media (min-width: 810px) {
+    padding: 10px 100px;
+  }
 }

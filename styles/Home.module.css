@@ -4,6 +4,11 @@
   gap: 80px;
   margin: 0 15px;
 }
+@media (min-width: 810px) {
+  .home {
+    margin: 0 100px;
+  }
+}
 .home .introduction {
   display: flex;
   flex-direction: column;
@@ -54,6 +59,26 @@
   border-radius: 25px;
   font-size: 1.25rem;
   background-color: #211c1c;
+}
+@media (min-width: 810px) {
+  .home .introduction .itemTwo {
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: auto auto 400px;
+    grid-template-areas: "itemOne itemOne itemOne" "itemTwo itemTwo itemTwo" "itemThree itemFour itemFour";
+  }
+  .home .introduction .itemTwo h1 {
+    grid-area: itemOne;
+  }
+  .home .introduction .itemTwo p {
+    grid-area: itemTwo;
+  }
+  .home .introduction .itemTwo .introSocials {
+    grid-area: itemThree;
+  }
+  .home .introduction .itemTwo a {
+    grid-area: itemFour;
+  }
 }
 .home .introduction .itemThree {
   display: flex;
