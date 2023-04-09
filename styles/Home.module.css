@@ -15,14 +15,14 @@
   margin: 125px 0;
   width: 250px;
   height: auto;
-  animation: float 5s ease-in-out infinite;
+  animation: float 10s ease-in-out infinite;
 }
 @keyframes float {
   0% {
     transform: translateY(30px);
   }
   50% {
-    transform: translateY(0px);
+    transform: translateY(-30px);
   }
   100% {
     transform: translateY(30px);
