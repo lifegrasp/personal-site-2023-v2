@@ -72,21 +72,24 @@
 @media (min-width: 810px) {
   .home .introduction .itemTwo {
     display: grid;
-    row-gap: 15px;
-    grid-template-columns: auto;
-    grid-template-areas: "itemOne itemOne itemOne" "itemTwo itemTwo itemTwo" "itemThree itemFour itemFour";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   .home .introduction .itemTwo h1 {
-    grid-area: itemOne;
+    grid-row: 1;
+    grid-column: span 3;
   }
   .home .introduction .itemTwo p {
-    grid-area: itemTwo;
+    grid-row: 2;
+    grid-column: span 3;
   }
   .home .introduction .itemTwo .introSocials {
-    grid-area: itemThree;
+    grid-row: 3;
+    grid-column: 1;
   }
   .home .introduction .itemTwo a {
-    grid-area: itemFour;
+    grid-row: 3;
+    grid-column: span 2;
   }
 }
 .home .introduction .itemThree {
