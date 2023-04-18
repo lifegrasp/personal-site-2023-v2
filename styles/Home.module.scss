@@ -8,7 +8,7 @@ $neutral-color: #211c1c;
 .home {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 100px;
   margin: 0 15px;
 
   // responsiveness for tablet
@@ -27,12 +27,12 @@ $neutral-color: #211c1c;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 
     // intro-item-1
     .itemOne {
       z-index: 1;
-      margin: 125px 0;
+      margin: auto;
       width: 250px;
       height: auto;
       animation: float 15s linear infinite;
