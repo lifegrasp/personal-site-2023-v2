@@ -86,16 +86,16 @@ export default function Home() {
       return (
         <Link href={repoData.html_url} target="_blank">
           <div className={styles.repo}>
-            <div className={styles.repoRow}>
+            <div className={styles.repoGrid}>
               <Image
-                className={styles.repoRowOne}
+                className={styles.repoGridOne}
                 src={repoData.owner.avatar_url}
                 width={300}
                 height={300}
               />
-              <p className={styles.repoRowTwo}>{repoData.owner.login}</p>
+              <p className={styles.repoGridTwo}>{repoData.owner.login}</p>
               <Image
-                className={styles.repoRowThree}
+                className={styles.repoGridThree}
                 src="/../public/svg/link.svg"
                 width={300}
                 height={300}
@@ -113,16 +113,16 @@ export default function Home() {
       return (
         <Link href="#">
           <div className={styles.repo}>
-            <div className={styles.repoRow}>
+            <div className={styles.repoGrid}>
               <Image
-                className={styles.repoRowOne}
+                className={styles.repoGridOne}
                 src="/../public/svg/user.svg"
                 width={300}
                 height={300}
               />
-              <p className={styles.repoRowTwo}>Author</p>
+              <p className={styles.repoGridTwo}>Author</p>
               <Image
-                className={styles.repoRowThree}
+                className={styles.repoGridThree}
                 src="/../public/svg/link.svg"
                 width={300}
                 height={300}
@@ -138,7 +138,7 @@ export default function Home() {
     };
 
     return (
-      <div className={styles.repository}>
+      <div className={styles.repositories}>
         <h2>Projects</h2>
         <Repo user="lifegrasp" repo="personal-site-2023-v2" />
         <Placeholder />

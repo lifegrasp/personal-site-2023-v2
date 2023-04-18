@@ -1,5 +1,6 @@
 .nav {
   z-index: 2;
+  margin-bottom: 200px;
 }
 .nav ul {
   display: flex;
@@ -31,5 +32,10 @@
 @media (min-width: 810px) {
   .scrolled {
     padding: 10px 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .scrolled {
+    padding: 10px 400px;
   }
 }/*# sourceMappingURL=Navigation.module.css.map */
