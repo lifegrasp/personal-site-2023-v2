@@ -106,7 +106,7 @@
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 10px;
          column-gap: 10px;
-    row-gap: 30px;
+    row-gap: 50px;
   }
   .home .introduction .itemOne {
     margin: 0 auto;
