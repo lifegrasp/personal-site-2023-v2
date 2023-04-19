@@ -25,6 +25,13 @@ $neutral-color: #211c1c;
       }
     }
   }
+
+  // hover effect for MDPI and above
+  @media (min-width: 810px) {
+    ul li a:hover {
+      color: $accent-color2;
+    }
+  }
 }
 
 .scrolled {
@@ -48,5 +55,9 @@ $neutral-color: #211c1c;
   // responsiveness for MDPI
   @media (min-width: 1280px) {
     padding: 10px 400px;
+
+    ul:hover {
+      border: 1px solid $accent-color2;
+    }
   }
 }
