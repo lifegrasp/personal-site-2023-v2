@@ -83,6 +83,14 @@ $neutral-color: #211c1c;
           border-radius: 25px;
           font-size: 1.25rem;
           background-color: $neutral-color;
+
+          // hover effect for MDPI and above
+          @media (min-width: 1280px) {
+            &:hover {
+              border: 2px solid $accent-color2;
+              color: $accent-color2;
+            }
+          }
         }
       }
 
@@ -211,6 +219,22 @@ $neutral-color: #211c1c;
           color: $complement-color;
         }
       }
+
+      // hover effect for MDPI and above
+      @media (min-width: 1280px) {
+        .repo:hover {
+          border: 1px solid $accent-color2;
+          transition: 0.1s linear;
+          transform: translateY(-5px);
+
+          .repoGrid {
+            .repoGridThree {
+              filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg)
+                brightness(103%) contrast(101%);
+            }
+          }
+        }
+      }
     }
 
     // responsiveness for MDPI
@@ -248,10 +272,7 @@ $neutral-color: #211c1c;
 
 // TODO:
 //
-// - .itemOne lift animation
-// - "See my résumé" and .repo should change color to $accent-color2 when hovered
 // - .repo lift animation when hovered
 // - clicking sound
 // - responsive design for:
 //    - HiDPI
-//    - MDPI

@@ -27,7 +27,7 @@ $neutral-color: #211c1c;
   }
 
   // hover effect for MDPI and above
-  @media (min-width: 810px) {
+  @media (min-width: 1280px) {
     ul li a:hover {
       color: $accent-color2;
     }

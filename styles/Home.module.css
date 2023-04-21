@@ -69,6 +69,12 @@
   font-size: 1.25rem;
   background-color: #211c1c;
 }
+@media (min-width: 1280px) {
+  .home .introduction .itemTwo a p:hover {
+    border: 2px solid #ae8b00;
+    color: #ae8b00;
+  }
+}
 @media (min-width: 810px) {
   .home .introduction .itemTwo {
     display: grid;
@@ -174,6 +180,16 @@
 }
 .home .repositories a .repo p {
   color: #c19797;
+}
+@media (min-width: 1280px) {
+  .home .repositories a .repo:hover {
+    border: 1px solid #ae8b00;
+    transition: 0.1s linear;
+    transform: translateY(-5px);
+  }
+  .home .repositories a .repo:hover .repoGrid .repoGridThree {
+    filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg) brightness(103%) contrast(101%);
+  }
 }
 @media (min-width: 1280px) {
   .home .repositories {
