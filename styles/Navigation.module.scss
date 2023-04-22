@@ -60,4 +60,9 @@ $neutral-color: #211c1c;
       border: 1px solid $accent-color2;
     }
   }
+
+  // responsiveness for 1080p
+  @media (min-width: 1920px) {
+    padding: 10px 700px;
+  }
 }

@@ -30,4 +30,15 @@ $neutral-color: #211c1c;
       margin: 50px 200px;
     }
   }
+
+  // responsiveness for 1080p
+  @media (min-width: 1920px) {
+    .footerSocials {
+      margin-left: 500px;
+    }
+
+    p {
+      margin-right: 500px;
+    }
+  }
 }

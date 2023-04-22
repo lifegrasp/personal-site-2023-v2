@@ -22,6 +22,11 @@ $neutral-color: #211c1c;
     gap: 200px;
   }
 
+  // responsiveness for 1080p
+  @media (min-width: 1920px) {
+    margin: 0 500px;
+  }
+
   //   introduction
   .introduction {
     display: flex;

@@ -20,4 +20,12 @@
   .footer p {
     margin: 50px 200px;
   }
+}
+@media (min-width: 1920px) {
+  .footer .footerSocials {
+    margin-left: 500px;
+  }
+  .footer p {
+    margin-right: 500px;
+  }
 }/*# sourceMappingURL=Footer.module.css.map */

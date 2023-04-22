@@ -46,4 +46,9 @@
   .scrolled ul:hover {
     border: 1px solid #ae8b00;
   }
+}
+@media (min-width: 1920px) {
+  .scrolled {
+    padding: 10px 700px;
+  }
 }/*# sourceMappingURL=Navigation.module.css.map */
