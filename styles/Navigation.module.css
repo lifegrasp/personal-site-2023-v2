@@ -26,7 +26,7 @@
   position: sticky;
   top: 0;
   padding: 10px 15px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .scrolled ul {
   background-color: #211c1c;
@@ -36,12 +36,20 @@
 }
 @media (min-width: 810px) {
   .scrolled {
+    display: flex;
+    justify-content: center;
     padding: 10px 100px;
+  }
+  .scrolled ul {
+    width: 610px;
   }
 }
 @media (min-width: 1280px) {
   .scrolled {
     padding: 10px 400px;
+  }
+  .scrolled ul {
+    width: 880px;
   }
   .scrolled ul:hover {
     border: 1px solid #ae8b00;
@@ -50,5 +58,8 @@
 @media (min-width: 1920px) {
   .scrolled {
     padding: 10px 700px;
+  }
+  .scrolled ul {
+    width: 920px;
   }
 }/*# sourceMappingURL=Navigation.module.css.map */

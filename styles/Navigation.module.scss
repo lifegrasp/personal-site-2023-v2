@@ -38,7 +38,7 @@ $neutral-color: #211c1c;
   position: sticky;
   top: 0;
   padding: 10px 15px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   ul {
     background-color: $neutral-color;
@@ -49,20 +49,34 @@ $neutral-color: #211c1c;
 
   // responsivess for tablet
   @media (min-width: 810px) {
+    display: flex;
+    justify-content: center;
     padding: 10px 100px;
+
+    ul {
+      width: 610px;
+    }
   }
 
   // responsiveness for MDPI
   @media (min-width: 1280px) {
     padding: 10px 400px;
 
-    ul:hover {
-      border: 1px solid $accent-color2;
+    ul {
+      width: 880px;
+
+      &:hover {
+        border: 1px solid $accent-color2;
+      }
     }
   }
 
   // responsiveness for 1080p
   @media (min-width: 1920px) {
     padding: 10px 700px;
+
+    ul {
+      width: 920px;
+    }
   }
 }
