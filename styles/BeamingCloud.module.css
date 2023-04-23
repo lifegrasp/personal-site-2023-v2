@@ -1,11 +1,10 @@
-.beamingCloud {
+.beamingCloud img {
   z-index: 1;
   margin: auto;
   width: 250px;
   height: auto;
   animation: float 10s linear infinite;
 }
-
 @keyframes float {
   0% {
     transform: translateY(0px);

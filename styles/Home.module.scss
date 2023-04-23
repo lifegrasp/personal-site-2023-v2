@@ -34,29 +34,7 @@ $neutral-color: #211c1c;
     align-items: center;
     gap: 100px;
 
-    // intro-item-1
-    .itemOne {
-      z-index: 1;
-      margin: auto;
-      width: 250px;
-      height: auto;
-      animation: float 10s linear infinite;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0px);
-      }
-      33% {
-        transform: translateY(-15px);
-      }
-      66% {
-        transform: translateY(15px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
-    }
+    // intro-item-1 is BeamingCloudHome component
 
     // intro-item-2
     .itemTwo {

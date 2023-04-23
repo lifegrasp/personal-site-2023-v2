@@ -1,13 +1,15 @@
+import Image from "next/image";
 import styles from "../styles/BeamingCloud.module.css";
 
 export default function BeamingCloud() {
   return (
-    <Image
-      classname={styles.beamingCloud}
-      src="/../public/cloud-w-beaming-smile.png"
-      alt="a cloud with a beaming smile"
-      width={500}
-      height={500}
-    />
+    <div className={styles.beamingCloud}>
+      <Image
+        src="/../public/cloud-w-beaming-smile.png"
+        alt="a cloud with a beaming smile"
+        width={500}
+        height={500}
+      />
+    </div>
   );
 }

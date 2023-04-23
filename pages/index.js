@@ -2,11 +2,20 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Socials from "@/components/Socials";
 import styles from "../styles/Home.module.css";
+import BeamingCloud from "@/components/BeamingCloud";
+import Socials from "@/components/Socials";
 
 export default function Home() {
   const Introduction = () => {
+    const BeamingCloudHome = () => {
+      return (
+        <div className={styles.itemOne}>
+          <BeamingCloud />
+        </div>
+      );
+    };
+
     const SocialsIntro = () => {
       return (
         <div className={styles.introSocials}>
@@ -18,13 +27,7 @@ export default function Home() {
     return (
       <div className={styles.introduction}>
         {/* intro item 1 */}
-        <Image
-          className={styles.itemOne}
-          src="/../public/cloud-w-beaming-smile.png"
-          alt="a cloud with a beaming smile"
-          width={500}
-          height={500}
-        />
+        <BeamingCloudHome />
 
         {/* intro item 2 */}
         <div className={styles.itemTwo}>
@@ -48,9 +51,9 @@ export default function Home() {
             continued to grow ever since. I'm currently focused on learning
             Reactjs and Nextjs, but I'm always on the lookout for new
             technologies to explore. In the future, I'm planning to expand my
-            skillset even further. I love the challenge and the
-            sense of accomplishment that comes with building something from
-            scratch, and I'm always looking for ways to improve my craft.
+            skillset even further. I love the challenge and the sense of
+            accomplishment that comes with building something from scratch, and
+            I'm always looking for ways to improve my craft.
           </p>
         </div>
       </div>
