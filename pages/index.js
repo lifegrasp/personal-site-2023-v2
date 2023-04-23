@@ -48,7 +48,7 @@ export default function Home() {
             continued to grow ever since. I'm currently focused on learning
             Reactjs and Nextjs, but I'm always on the lookout for new
             technologies to explore. In the future, I'm planning to expand my
-            skillset even further and learn Svelte. I love the challenge and the
+            skillset even further. I love the challenge and the
             sense of accomplishment that comes with building something from
             scratch, and I'm always looking for ways to improve my craft.
           </p>
