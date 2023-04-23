@@ -37,7 +37,7 @@
 .home .introduction .itemTwo p {
   font-size: 1.2rem;
 }
-.home .introduction .itemTwo .introSocials {
+.home .introduction .itemTwo .socialsHome {
   margin: 15px;
 }
 .home .introduction .itemTwo a {
@@ -73,7 +73,7 @@
     grid-row: 2;
     grid-column: span 3;
   }
-  .home .introduction .itemTwo .introSocials {
+  .home .introduction .itemTwo .socialsHome {
     grid-row: 3;
     grid-column: 1;
   }

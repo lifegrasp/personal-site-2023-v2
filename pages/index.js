@@ -16,9 +16,9 @@ export default function Home() {
       );
     };
 
-    const SocialsIntro = () => {
+    const SocialsHome = () => {
       return (
-        <div className={styles.introSocials}>
+        <div className={styles.socialsHome}>
           <Socials />
         </div>
       );
@@ -36,7 +36,7 @@ export default function Home() {
             A web developer with a passion for creating stunning and
             user-friendly websites.
           </p>
-          <SocialsIntro />
+          <SocialsHome />
           <a href="resume.pdf" target="_blank">
             <p>See my résumé</p>
           </a>
