@@ -20,12 +20,6 @@
     margin: 0 500px;
   }
 }
-.home .introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
 .home .introduction .itemTwo {
   display: flex;
   flex-direction: column;
@@ -37,7 +31,7 @@
 .home .introduction .itemTwo p {
   font-size: 1.2rem;
 }
-.home .introduction .itemTwo .socialsHome {
+.home .introduction .itemTwo .socials {
   margin: 15px;
 }
 .home .introduction .itemTwo a {
@@ -73,7 +67,7 @@
     grid-row: 2;
     grid-column: span 3;
   }
-  .home .introduction .itemTwo .socialsHome {
+  .home .introduction .itemTwo .socials {
     grid-row: 3;
     grid-column: 1;
   }
@@ -86,34 +80,6 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-@media (min-width: 1280px) {
-  .home .introduction .itemThree h2 {
-    text-align: center;
-  }
-}
-@media (min-width: 1280px) {
-  .home .introduction {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    row-gap: 50px;
-  }
-  .home .introduction .itemOne {
-    margin: 0 auto;
-    grid-row: 1;
-    grid-column: 2;
-  }
-  .home .introduction .itemTwo {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .home .introduction .itemThree {
-    grid-row: 2;
-    grid-column: span 2;
-  }
 }
 .home .repositories {
   display: flex;

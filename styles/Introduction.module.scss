@@ -1,0 +1,71 @@
+$dominant-color: #171212;
+$complement-color: #c19797;
+$complement-color2: #ebb8b8;
+$accent-color: #836900;
+$accent-color2: #ae8b00;
+$neutral-color: #211c1c;
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  .itemOne {
+    z-index: 1;
+    margin: auto;
+    width: 250px;
+    height: auto;
+    animation: float 10s linear infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    33% {
+      transform: translateY(-15px);
+    }
+    66% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+// styling for .itemTwo is in the other files.
+
+  .itemThree {
+    // responsiveness for MDPI
+    @media (min-width: 1280px) {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  //   responsiveness for MDPI
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 100px;
+
+    .itemOne {
+      margin: 0 auto;
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    .itemTwo {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .itemThree {
+      grid-row: 2;
+      grid-column: span 2;
+    }
+  }
+}

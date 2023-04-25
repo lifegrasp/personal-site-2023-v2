@@ -4,58 +4,56 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import BeamingCloud from "@/components/BeamingCloud";
+import Introduction from "@/components/Introduction";
 import Socials from "@/components/Socials";
 
 export default function Home() {
-  const Introduction = () => {
-    const BeamingCloudHome = () => {
-      return (
-        <div className={styles.itemOne}>
-          <BeamingCloud />
-        </div>
-      );
-    };
+  const Intro = () => {
+    const introItemOne = (
+      <div className={styles.itemOne}>
+        <BeamingCloud />
+      </div>
+    );
 
-    const SocialsHome = () => {
-      return (
-        <div className={styles.socialsHome}>
+    const introItemTwo = (
+      <div className={styles.itemTwo}>
+        <h1>Henry Hart</h1>
+        <p>
+          A web developer with a passion for creating stunning and user-friendly
+          websites.
+        </p>
+        <div className={styles.socials}>
           <Socials />
         </div>
-      );
-    };
+        <a href="resume.pdf" target="_blank">
+          <p>See my résumé</p>
+        </a>
+      </div>
+    );
+
+    const introItemThree = (
+      <div className={styles.itemThree}>
+        <h2>Bio</h2>
+        <p>
+          Allo ~ ! I'm Henry Hart, a web developer based in the Philippines. My
+          passion for computers started when I was just a kid, and it has
+          continued to grow ever since. I'm currently focused on learning
+          Reactjs and Nextjs, but I'm always on the lookout for new technologies
+          to explore. In the future, I'm planning to expand my skillset even
+          further. I love the challenge and the sense of accomplishment that
+          comes with building something from scratch, and I'm always looking for
+          ways to improve my craft.
+        </p>
+      </div>
+    );
 
     return (
       <div className={styles.introduction}>
-        {/* intro item 1 */}
-        <BeamingCloudHome />
-
-        {/* intro item 2 */}
-        <div className={styles.itemTwo}>
-          <h1>Henry Hart</h1>
-          <p>
-            A web developer with a passion for creating stunning and
-            user-friendly websites.
-          </p>
-          <SocialsHome />
-          <a href="resume.pdf" target="_blank">
-            <p>See my résumé</p>
-          </a>
-        </div>
-
-        {/* intro item 3 */}
-        <div className={styles.itemThree}>
-          <h2>Bio</h2>
-          <p>
-            Allo ~ ! I'm Henry Hart, a web developer based in the Philippines.
-            My passion for computers started when I was just a kid, and it has
-            continued to grow ever since. I'm currently focused on learning
-            Reactjs and Nextjs, but I'm always on the lookout for new
-            technologies to explore. In the future, I'm planning to expand my
-            skillset even further. I love the challenge and the sense of
-            accomplishment that comes with building something from scratch, and
-            I'm always looking for ways to improve my craft.
-          </p>
-        </div>
+        <Introduction
+          itemOne={introItemOne}
+          itemTwo={introItemTwo}
+          itemThree={introItemThree}
+        />
       </div>
     );
   };
@@ -179,7 +177,7 @@ export default function Home() {
       </Head>
       <main>
         <div className={styles.home}>
-          <Introduction />
+          <Intro />
           <Repositories />
           <Quote />
         </div>

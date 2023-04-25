@@ -1,5 +1,17 @@
 import BeamingCloud from "@/components/BeamingCloud";
 
 export default function About() {
-  return <BeamingCloud />;
+  const BeamingCloudAbout = () => {
+    return (
+      <div>
+        <BeamingCloud />
+      </div>
+    );
+  };
+
+  return (
+    <div>
+      <BeamingCloudAbout />
+    </div>
+  );
 }

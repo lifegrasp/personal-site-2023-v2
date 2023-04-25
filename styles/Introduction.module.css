@@ -1,0 +1,54 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.introduction .itemOne {
+  z-index: 1;
+  margin: auto;
+  width: 250px;
+  height: auto;
+  animation: float 10s linear infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(-15px);
+  }
+  66% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (min-width: 1280px) {
+  .introduction .itemThree h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 1280px) {
+  .introduction {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 100px;
+  }
+  .introduction .itemOne {
+    margin: 0 auto;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .introduction .itemTwo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .introduction .itemThree {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+}/*# sourceMappingURL=Introduction.module.css.map */
