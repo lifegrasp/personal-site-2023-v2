@@ -154,7 +154,7 @@
 .home .quote {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   font-size: 1.2rem;
 }
 .home .quote p {
