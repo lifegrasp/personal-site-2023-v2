@@ -3,6 +3,27 @@
   flex-direction: column;
   gap: 100px;
 }
+.introduction .itemOne {
+  z-index: 1;
+  margin: auto;
+  width: 250px;
+  height: auto;
+  animation: float 10s linear infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(-15px);
+  }
+  66% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @media (min-width: 1280px) {
   .introduction .itemThree h2 {
     text-align: center;

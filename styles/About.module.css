@@ -1,0 +1,52 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 0 15px;
+}
+@media (min-width: 810px) {
+  .about {
+    margin: 0 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .about {
+    margin: 0 200px;
+    gap: 200px;
+  }
+}
+@media (min-width: 1920px) {
+  .about {
+    margin: 0 500px;
+  }
+}
+.about .introduction .itemTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.about .introduction .itemTwo h1 {
+  font-size: 2.5rem;
+}
+.about .introduction .itemTwo div {
+  display: flex;
+  gap: 25px;
+}
+.about .introduction .itemTwo div span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.about .introduction .itemTwo div span p {
+  font-size: 1.2rem;
+}
+.about .introduction .itemTwo div span img {
+  width: 45px;
+  height: 45px;
+}
+.about .introduction .itemThree {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}/*# sourceMappingURL=About.module.css.map */
