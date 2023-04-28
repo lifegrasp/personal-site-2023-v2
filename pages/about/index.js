@@ -80,6 +80,77 @@ export default function About() {
     );
   };
 
+  const Experience = () => {
+    return (
+      <div className={styles.experience}>
+        {/* item one */}
+        <div className={styles.itemOne}>
+          <h2>Experience</h2>
+          <p>
+            Combined experience as a community manager, ROTC officer, and IT
+            intern has honed my skills in community building, leadership, and
+            technology operations. Proficient in fostering relationships,
+            executing projects, and utilizing technology to achieve successful
+            outcomes.
+          </p>
+        </div>
+
+        {/* item two */}
+        <div className={styles.itemTwo}>
+          <div className={styles.exp}>
+            <div className={styles.timeline}>
+              <h3>Philippine Health Insurance Corporation</h3>
+              <h4>SEP 2022 - JAN 2023</h4>
+            </div>
+            <div className={styles.position}>
+              <h4>IT Intern</h4>
+              <ul>
+                <li>Assisting with technical support.</li>
+                <li>Assisting with data management.</li>
+                <li>Maintaining and updating hardware and software.</li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.exp}>
+            <div className={styles.timeline}>
+              <h3>St. Vincent's College Incorporated</h3>
+              <h4>JUN 2019 - MAR 2020</h4>
+            </div>
+            <div className={styles.position}>
+              <h4>ROTC Officer</h4>
+              <ul>
+                <li>
+                  Allocates resources to ensure accomplishment of all company
+                  level missions.
+                </li>
+                <li>
+                  Responsible for all matters concerning training, operations,
+                  and plans at company level.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.exp}>
+            <div className={styles.timeline}>
+              <h3>Black Desert Online</h3>
+              <h4>OCT 2018 - JAN 2022</h4>
+            </div>
+            <div className={styles.position}>
+              <h4>Community Manager</h4>
+              <ul>
+                <li>
+                  Build relationships with other communities and individual.
+                </li>
+                <li>Monitor and report on feedback.</li>
+                <li>Organize and participate in events.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <Head>
@@ -91,6 +162,7 @@ export default function About() {
       <main>
         <div className={styles.about}>
           <Intro />
+          <Experience />
         </div>
       </main>
     </>

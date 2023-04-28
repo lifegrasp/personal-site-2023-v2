@@ -49,4 +49,35 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+.about .experience {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about .experience .itemOne {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (min-width: 1280px) {
+  .about .experience .itemOne h2 {
+    text-align: center;
+  }
+}
+.about .experience .itemTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about .experience .itemTwo .exp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .experience .itemTwo .exp .timeline h4 {
+  color: #c19797;
+}
+.about .experience .itemTwo .exp .position ul {
+  padding-left: 15px;
 }/*# sourceMappingURL=About.module.css.map */

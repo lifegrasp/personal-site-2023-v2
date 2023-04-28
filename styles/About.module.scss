@@ -68,4 +68,48 @@ $neutral-color: #211c1c;
       gap: 25px;
     }
   }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    // exp-item-1
+    .itemOne {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      @media (min-width: 1280px) {
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+
+    // exp-item-2
+    .itemTwo {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .exp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .timeline {
+          h4 {
+            color: $complement-color;
+          }
+        }
+
+        .position {
+          ul {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
 }
