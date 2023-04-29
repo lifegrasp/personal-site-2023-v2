@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../../styles/Archive.module.css";
+import styles from "../styles/Archive.module.css";
 import Introduction from "@/components/Introduction";
 import BeamingCloud from "@/components/BeamingCloud";
 
@@ -44,7 +44,13 @@ export default function Archive() {
     );
   };
 
-
+  const Iterations = () => {
+    return (
+      <div className={styles.iterations}>
+        <div></div>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -57,6 +63,7 @@ export default function Archive() {
       <main>
         <div className={styles.archive}>
           <Intro />
+          <Iterations />
         </div>
       </main>
     </>

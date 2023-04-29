@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../../styles/About.module.css";
+import styles from "../styles/About.module.css";
 import BeamingCloud from "@/components/BeamingCloud";
 import Introduction from "@/components/Introduction";
 
