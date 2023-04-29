@@ -1,0 +1,53 @@
+$dominant-color: #171212;
+$complement-color: #c19797;
+$complement-color2: #ebb8b8;
+$accent-color: #836900;
+$accent-color2: #ae8b00;
+$neutral-color: #211c1c;
+
+.archive {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 0 15px;
+
+  // responsiveness for tablet
+  @media (min-width: 810px) {
+    margin: 0 100px;
+  }
+
+  // responsiveness for MDPI
+  @media (min-width: 1280px) {
+    margin: 0 200px;
+    gap: 200px;
+  }
+
+  // responsiveness for 1080p
+  @media (min-width: 1920px) {
+    margin: 0 500px;
+  }
+
+  //   introduction
+  .introduction {
+    // itro-item-two
+    .itemTwo {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .itemThree {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+}
