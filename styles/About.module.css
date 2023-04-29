@@ -80,4 +80,18 @@
 }
 .about .experience .itemTwo .exp .position ul {
   padding-left: 15px;
+}
+.about .education {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about .education p span {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+@media (min-width: 1280px) {
+  .about .education h2 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=About.module.css.map */

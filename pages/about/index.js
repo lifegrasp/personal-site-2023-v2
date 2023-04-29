@@ -151,6 +151,30 @@ export default function About() {
     );
   };
 
+  const Education = () => {
+    return (
+      <div className={styles.education}>
+        <h2>Education</h2>
+        <p>
+          I completed my{" "}
+          <span>Bachelor of Science in Information Technology</span> degree at
+          the esteemed <span>St. Vincent's College Incorporated</span>. My
+          academic journey spanned from 2019 to 2023, during which I dedicated
+          myself to acquiring a comprehensive understanding of the IT landscape.
+          I engaged in rigorous coursework that covered a wide range of topics,
+          including programming languages, software development, data
+          management, and network administration. As part of my degree program,
+          I also participated in various projects and internships, which allowed
+          me to apply the theoretical knowledge I gained in the classroom to
+          real-world scenarios. This holistic educational experience has
+          equipped me with the skills and expertise necessary to excel in the
+          field of Information Technology, and I am eager to leverage this
+          foundation in my professional career.
+        </p>
+      </div>
+    );
+  };
+
   return (
     <>
       <Head>
@@ -163,6 +187,7 @@ export default function About() {
         <div className={styles.about}>
           <Intro />
           <Experience />
+          <Education />
         </div>
       </main>
     </>

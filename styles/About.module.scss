@@ -69,6 +69,7 @@ $neutral-color: #211c1c;
     }
   }
 
+  // experience
   .experience {
     display: flex;
     flex-direction: column;
@@ -80,6 +81,7 @@ $neutral-color: #211c1c;
       flex-direction: column;
       gap: 25px;
 
+      // responsiveness for MDPI
       @media (min-width: 1280px) {
         h2 {
           text-align: center;
@@ -109,6 +111,25 @@ $neutral-color: #211c1c;
             padding-left: 15px;
           }
         }
+      }
+    }
+  }
+
+  // education
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    p span {
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+    // responsiveness for MDPI
+    @media (min-width: 1280px) {
+      h2 {
+        text-align: center;
       }
     }
   }
