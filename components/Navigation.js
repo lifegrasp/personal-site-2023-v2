@@ -33,7 +33,7 @@ export default function Navigation() {
           <Link href="/about">About</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/archive">Archive</Link>
         </li>
       </ul>
     </nav>
