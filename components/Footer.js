@@ -9,14 +9,14 @@ export default function Footer() {
       </div>
     );
   };
-  const PrevIterations = () => {
+  const Description = () => {
     return <p>Created with suffering. 💖</p>;
   };
 
   return (
     <footer className={styles.footer}>
       <SocialsFooter />
-      <PrevIterations />
+      <Description />
     </footer>
   );
 }
