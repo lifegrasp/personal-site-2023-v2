@@ -88,18 +88,6 @@ export default function Archive() {
           repoUrl="https://github.com/lifegrasp/personal-site-2023"
           archUrl="/archive/2023-V1.html"
         />
-        {/* <Archived
-          date="2023 V1"
-          imgSrc="/../public/archive/2023-V1.png"
-          alt="2023 V1 iteration of the site"
-          repoUrl="https://github.com/lifegrasp/personal-site-2023"
-        />
-        <Archived
-          date="2023 V1"
-          imgSrc="/../public/archive/2023-V1.png"
-          alt="2023 V1 iteration of the site"
-          repoUrl="https://github.com/lifegrasp/personal-site-2023"
-        /> */}
       </div>
     );
   };
