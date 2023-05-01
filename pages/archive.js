@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Archive.module.css";
 import Introduction from "@/components/Introduction";
 import BeamingCloud from "@/components/BeamingCloud";
@@ -45,9 +47,59 @@ export default function Archive() {
   };
 
   const Iterations = () => {
+    const Archived = (props) => {
+      const { date, imgSrc, alt, repoUrl, archUrl } = props;
+
+      return (
+        <div className={styles.archived}>
+          <div>
+            <Link href={archUrl} target="_blank">
+              <Image src={imgSrc} alt={alt} width={500} height={500} />
+            </Link>
+          </div>
+          <span>
+            <h3>{date}</h3>
+            <Link href={repoUrl} target="_blank">
+              <Image
+                src="/../public/svg/github.svg"
+                alt="GitHub logo"
+                width={500}
+                height={500}
+              />
+            </Link>
+          </span>
+        </div>
+      );
+    };
+
     return (
       <div className={styles.iterations}>
-        <div></div>
+        <Archived
+          date="2023 V2"
+          imgSrc="/../public/archive/2023-V2.png"
+          alt="2023 V1 iteration of the site"
+          repoUrl="https://github.com/lifegrasp/personal-site-2023"
+          archUrl="/"
+        />
+        <Archived
+          date="2023 V1"
+          imgSrc="/../public/archive/2023-V1.png"
+          alt="2023 V1 iteration of the site"
+          repoUrl="https://github.com/lifegrasp/personal-site-2023"
+          archUrl="/archive/2023-V1.html"
+        />
+        {/* <Archived
+          date="2023 V1"
+          imgSrc="/../public/archive/2023-V1.png"
+          alt="2023 V1 iteration of the site"
+          repoUrl="https://github.com/lifegrasp/personal-site-2023"
+        />
+        <Archived
+          date="2023 V1"
+          imgSrc="/../public/archive/2023-V1.png"
+          alt="2023 V1 iteration of the site"
+          repoUrl="https://github.com/lifegrasp/personal-site-2023"
+        /> */}
       </div>
     );
   };

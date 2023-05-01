@@ -50,4 +50,66 @@ $neutral-color: #211c1c;
       gap: 25px;
     }
   }
+
+  //   iterations
+  .iterations {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .archived {
+      border: 1px solid $accent-color;
+      border-radius: 10px;
+      background-color: $neutral-color;
+
+      div a img {
+        width: 100%;
+        height: 100%;
+        padding: 3px;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 1px solid $accent-color;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+
+        a {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+
+    // responsiveness for MDPI
+    @media (min-width: 1280px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .archived {
+        width: 400px;
+
+        // hover effect
+        &:hover {
+          border: 1px solid $accent-color2;
+          transition: 0.1s linear;
+          transform: translateY(-5px);
+
+          div a img {
+            border-bottom: 1px solid $accent-color2;
+          }
+
+          span a img {
+            filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg)
+              brightness(103%) contrast(101%);
+          }
+        }
+      }
+    }
+  }
 }

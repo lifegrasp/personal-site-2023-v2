@@ -35,4 +35,52 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+.archive .iterations {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.archive .iterations .archived {
+  border: 1px solid #836900;
+  border-radius: 10px;
+  background-color: #211c1c;
+}
+.archive .iterations .archived div a img {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #836900;
+}
+.archive .iterations .archived span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.archive .iterations .archived span a img {
+  width: 25px;
+  height: 25px;
+}
+@media (min-width: 1280px) {
+  .archive .iterations {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .archive .iterations .archived {
+    width: 400px;
+  }
+  .archive .iterations .archived:hover {
+    border: 1px solid #ae8b00;
+    transition: 0.1s linear;
+    transform: translateY(-5px);
+  }
+  .archive .iterations .archived:hover div a img {
+    border-bottom: 1px solid #ae8b00;
+  }
+  .archive .iterations .archived:hover span a img {
+    filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg) brightness(103%) contrast(101%);
+  }
 }/*# sourceMappingURL=Archive.module.css.map */
