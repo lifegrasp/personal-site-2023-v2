@@ -166,15 +166,18 @@ $neutral-color: #211c1c;
 
       // hover effect for MDPI and above
       @media (min-width: 1280px) {
-        .repo:hover {
-          border: 1px solid $accent-color2;
-          transition: 0.1s linear;
-          transform: translateY(-5px);
+        .repo {
+          transition: 0.3s linear;
 
-          .repoGrid {
-            .repoGridThree {
-              filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg)
-                brightness(103%) contrast(101%);
+          &:hover {
+            border: 1px solid $accent-color2;
+            transform: translateY(-5px);
+
+            .repoGrid {
+              .repoGridThree {
+                filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg)
+                  brightness(103%) contrast(101%);
+              }
             }
           }
         }

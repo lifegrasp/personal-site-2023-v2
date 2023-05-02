@@ -71,10 +71,10 @@
   }
   .archive .iterations .archived {
     width: 400px;
+    transition: 0.3s linear;
   }
   .archive .iterations .archived:hover {
     border: 1px solid #ae8b00;
-    transition: 0.1s linear;
     transform: translateY(-5px);
   }
   .archive .iterations .archived:hover div a img {

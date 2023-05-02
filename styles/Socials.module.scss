@@ -40,7 +40,7 @@ $neutral-color: #211c1c;
         border-radius: 7px;
         visibility: hidden;
         opacity: 0;
-        transition: opacity 0.5s ease;
+        transition: 0.5s ease;
 
         &:before {
           content: "";
@@ -54,7 +54,7 @@ $neutral-color: #211c1c;
       }
 
       &:hover span {
-        top: -150%;
+        top: -180%;
         visibility: visible;
         opacity: 1;
       }

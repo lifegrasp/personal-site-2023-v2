@@ -94,10 +94,11 @@ $neutral-color: #211c1c;
       .archived {
         width: 400px;
 
-        // hover effect
+        // hover effect for MDPI and above
+        transition: 0.3s linear;
+
         &:hover {
           border: 1px solid $accent-color2;
-          transition: 0.1s linear;
           transform: translateY(-5px);
 
           div a img {
