@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Syne Mono", monospace;
-  background-image: url("../assets/straws.png");
+  background-image: url("../2023-V1_files/straws.png");
 }
 body header {
   border-bottom: solid grey 2px;
