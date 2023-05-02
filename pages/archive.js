@@ -78,7 +78,7 @@ export default function Archive() {
           date="2023 V2"
           imgSrc="/../public/archive/2023-V2.png"
           alt="2023 V1 iteration of the site"
-          repoUrl="https://github.com/lifegrasp/personal-site-2023"
+          repoUrl="https://github.com/lifegrasp/personal-site-2023-v2"
           archUrl="/"
         />
         <Archived
