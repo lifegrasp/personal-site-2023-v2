@@ -130,9 +130,7 @@ export default function Home() {
               />
             </div>
             <h3 className={styles.repoTitle}>Project Title</h3>
-            <p className={styles.repoDesc}>
-              Description's placeholder for a future project.
-            </p>
+            <p className={styles.repoDesc}>Description for the project here.</p>
           </div>
         </Link>
       );
