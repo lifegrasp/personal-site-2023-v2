@@ -140,9 +140,9 @@ export default function Home() {
       <div className={styles.repositories}>
         <h2>Projects</h2>
         <Repo user="lifegrasp" repo="personal-site-2023-v2" />
-        <Placeholder />
-        <Placeholder />
-        <Placeholder />
+        <Repo user="lifegrasp" repo="svci-rndas" />
+        {/* <Placeholder />
+        <Placeholder /> */}
       </div>
     );
   };
