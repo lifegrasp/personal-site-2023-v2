@@ -139,10 +139,12 @@ export default function Home() {
     return (
       <div className={styles.repositories}>
         <h2>Projects</h2>
-        <Repo user="lifegrasp" repo="personal-site-2023-v2" />
-        <Repo user="lifegrasp" repo="svci-rndas" />
-        {/* <Placeholder />
-        <Placeholder /> */}
+        <div className={styles.displayedRepo}>
+          <Repo user="lifegrasp" repo="personal-site-2023-v2" />
+          <Repo user="lifegrasp" repo="svci-rndas" />
+          <Placeholder />
+          <Placeholder />
+        </div>
       </div>
     );
   };

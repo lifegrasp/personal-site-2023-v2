@@ -86,10 +86,15 @@
   flex-direction: column;
   gap: 25px;
 }
-.home .repositories a {
+.home .repositories .displayedRepo {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.home .repositories .displayedRepo a {
   text-decoration: none;
 }
-.home .repositories a .repo {
+.home .repositories .displayedRepo a .repo {
   margin: 0;
   height: 100%;
   min-height: 150px;
@@ -101,7 +106,7 @@
   border-radius: 10px;
   background-color: #211c1c;
 }
-.home .repositories a .repo .repoGrid {
+.home .repositories .displayedRepo a .repo .repoGrid {
   padding: 0;
   display: grid;
   border: none;
@@ -110,47 +115,54 @@
   grid-gap: 10px;
   align-items: center;
 }
-.home .repositories a .repo .repoGrid .repoGridOne {
+.home .repositories .displayedRepo a .repo .repoGrid .repoGridOne {
   width: 20px;
   height: auto;
   border-radius: 50%;
   grid-area: itemOne;
 }
-.home .repositories a .repo .repoGrid .repoGridTwo {
+.home .repositories .displayedRepo a .repo .repoGrid .repoGridTwo {
   font-size: 0.8rem;
   grid-area: itemTwo;
 }
-.home .repositories a .repo .repoGrid .repoGridThree {
+.home .repositories .displayedRepo a .repo .repoGrid .repoGridThree {
   width: 20px;
   height: auto;
   grid-area: itemThree;
 }
-.home .repositories a .repo h3 {
+.home .repositories .displayedRepo a .repo h3 {
   color: #ebb8b8;
 }
-.home .repositories a .repo p {
+.home .repositories .displayedRepo a .repo p {
   color: #c19797;
 }
 @media (min-width: 1280px) {
-  .home .repositories a .repo {
+  .home .repositories .displayedRepo a .repo {
     transition: 0.3s linear;
   }
-  .home .repositories a .repo:hover {
+  .home .repositories .displayedRepo a .repo:hover {
     border: 1px solid #ae8b00;
     transform: translateY(-5px);
   }
-  .home .repositories a .repo:hover .repoGrid .repoGridThree {
+  .home .repositories .displayedRepo a .repo:hover .repoGrid .repoGridThree {
     filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg) brightness(103%) contrast(101%);
   }
 }
 @media (min-width: 1280px) {
-  .home .repositories {
-    display: grid;
-    grid-template-areas: "itemOne itemOne";
-  }
   .home .repositories h2 {
     text-align: center;
-    grid-area: itemOne;
+  }
+  .home .repositories .displayedRepo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home .repositories .displayedRepo .repo {
+    min-width: 420px;
+    width: 100%;
+  }
+  .home .repositories .displayedRepo .repo p {
+    width: 300px;
   }
 }
 .home .quote {

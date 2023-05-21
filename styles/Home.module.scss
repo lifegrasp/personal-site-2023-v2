@@ -112,71 +112,77 @@ $neutral-color: #211c1c;
     flex-direction: column;
     gap: 25px;
 
-    a {
-      text-decoration: none;
+    .displayedRepo {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
 
-      .repo {
-        margin: 0;
-        height: 100%;
-        min-height: 150px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
-        border: 1px solid $accent-color;
-        border-radius: 10px;
-        background-color: $neutral-color;
+      a {
+        text-decoration: none;
 
-        .repoGrid {
-          padding: 0;
-          display: grid;
-          border: none;
-          grid-template-columns: 20px auto 20px;
-          grid-template-areas: "itemOne itemTwo itemThree";
-          grid-gap: 10px;
-          align-items: center;
-
-          .repoGridOne {
-            width: 20px;
-            height: auto;
-            border-radius: 50%;
-            grid-area: itemOne;
-          }
-
-          .repoGridTwo {
-            font-size: 0.8rem;
-            grid-area: itemTwo;
-          }
-
-          .repoGridThree {
-            width: 20px;
-            height: auto;
-            grid-area: itemThree;
-          }
-        }
-
-        h3 {
-          color: $complement-color2;
-        }
-
-        p {
-          color: $complement-color;
-        }
-      }
-
-      // hover effect for MDPI and above
-      @media (min-width: 1280px) {
         .repo {
-          transition: 0.3s linear;
+          margin: 0;
+          height: 100%;
+          min-height: 150px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 15px;
+          border: 1px solid $accent-color;
+          border-radius: 10px;
+          background-color: $neutral-color;
 
-          &:hover {
-            border: 1px solid $accent-color2;
-            transform: translateY(-5px);
+          .repoGrid {
+            padding: 0;
+            display: grid;
+            border: none;
+            grid-template-columns: 20px auto 20px;
+            grid-template-areas: "itemOne itemTwo itemThree";
+            grid-gap: 10px;
+            align-items: center;
 
-            .repoGrid {
-              .repoGridThree {
-                filter: invert(39%) sepia(98%) saturate(913%) hue-rotate(27deg)
-                  brightness(103%) contrast(101%);
+            .repoGridOne {
+              width: 20px;
+              height: auto;
+              border-radius: 50%;
+              grid-area: itemOne;
+            }
+
+            .repoGridTwo {
+              font-size: 0.8rem;
+              grid-area: itemTwo;
+            }
+
+            .repoGridThree {
+              width: 20px;
+              height: auto;
+              grid-area: itemThree;
+            }
+          }
+
+          h3 {
+            color: $complement-color2;
+          }
+
+          p {
+            color: $complement-color;
+          }
+        }
+
+        // hover effect for MDPI and above
+        @media (min-width: 1280px) {
+          .repo {
+            transition: 0.3s linear;
+
+            &:hover {
+              border: 1px solid $accent-color2;
+              transform: translateY(-5px);
+
+              .repoGrid {
+                .repoGridThree {
+                  filter: invert(39%) sepia(98%) saturate(913%)
+                    hue-rotate(27deg) brightness(103%) contrast(101%);
+                }
               }
             }
           }
@@ -186,12 +192,23 @@ $neutral-color: #211c1c;
 
     // responsiveness for MDPI
     @media (min-width: 1280px) {
-      display: grid;
-      grid-template-areas: "itemOne itemOne";
-
       h2 {
         text-align: center;
-        grid-area: itemOne;
+      }
+
+      .displayedRepo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .repo {
+          min-width: 420px;
+          width: 100%;
+
+          p {
+            width: 300px;
+          }
+        }
       }
     }
   }
