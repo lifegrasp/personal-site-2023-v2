@@ -1,1 +1,4 @@
-The second iteration of my personal site.
+# ☁ Personal Site 2023 version 2
+
+![Site showcase](site-showcase.png)
+
