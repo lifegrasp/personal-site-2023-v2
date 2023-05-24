@@ -2,7 +2,7 @@
 
 ![site-showcase](site-showcase.png)
 
-A personal site that serves as a showcase for my web development skills developed over the years. This project will sort of be my pet project when I learn new concepts in web development and implement it here first.
+A personal site that serves as a showcase for my web development skills developed over the years. This project will sort of be my pet project when I learn new concepts in web development and try implement it here first.
 
 ## 🤝 Credit
 
@@ -20,7 +20,7 @@ Features that I want to add in this project or the following iteration of the pr
 
 ## ⚙️ Installation 
 
-The project is built by Next.js.
+The project is built by **Next.js**.
 
 1. `npm install`
 2. `npm run dev`
