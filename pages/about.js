@@ -113,7 +113,7 @@ export default function About() {
           </div>
           <div className={styles.exp}>
             <div className={styles.timeline}>
-              <h3>St. Vincent's College Incorporated</h3>
+              <h3>St. Vincent&apos;s College Incorporated</h3>
               <h4>JUN 2019 - MAR 2020</h4>
             </div>
             <div className={styles.position}>
@@ -158,7 +158,7 @@ export default function About() {
         <p>
           I completed my{" "}
           <span>Bachelor of Science in Information Technology</span> degree at
-          the esteemed <span>St. Vincent's College Incorporated</span>. My
+          the esteemed <span>St. Vincent&apos;s College Incorporated</span>. My
           academic journey spanned from 2019 to 2023, during which I dedicated
           myself to acquiring a comprehensive understanding of the IT landscape.
           I engaged in rigorous coursework that covered a wide range of topics,

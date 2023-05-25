@@ -35,13 +35,13 @@ export default function Home() {
       <div className={styles.itemThree}>
         <h2>Bio</h2>
         <p>
-          Allo ~ ! I'm Henry Hart, a web developer based in the Philippines. My
+          Allo ~ ! I&apos;m Henry Hart, a web developer based in the Philippines. My
           passion for computers started when I was just a kid, and it has
-          continued to grow ever since. I'm currently focused on learning
-          Reactjs and Nextjs, but I'm always on the lookout for new technologies
-          to explore. In the future, I'm planning to expand my skillset even
+          continued to grow ever since. I&apos;m currently focused on learning
+          Reactjs and Nextjs, but I&apos;m always on the lookout for new technologies
+          to explore. In the future, I&apos;m planning to expand my skillset even
           further. I love the challenge and the sense of accomplishment that
-          comes with building something from scratch, and I'm always looking for
+          comes with building something from scratch, and I&apos;m always looking for
           ways to improve my craft.
         </p>
       </div>
@@ -93,6 +93,7 @@ export default function Home() {
                 src={repoData.owner.avatar_url}
                 width={300}
                 height={300}
+                alt="avatar"
               />
               <p className={styles.repoGridTwo}>{repoData.owner.login}</p>
               <Image
@@ -100,6 +101,7 @@ export default function Home() {
                 src="/../public/svg/link.svg"
                 width={300}
                 height={300}
+                alt="link"
               />
             </div>
             <h3 className={styles.repoTitle}>{repoData.name}</h3>
@@ -120,6 +122,7 @@ export default function Home() {
                 src="/../public/svg/user.svg"
                 width={300}
                 height={300}
+                alt="placeholder avtar"
               />
               <p className={styles.repoGridTwo}>Author</p>
               <Image
@@ -127,6 +130,7 @@ export default function Home() {
                 src="/../public/svg/link.svg"
                 width={300}
                 height={300}
+                alt="link"
               />
             </div>
             <h3 className={styles.repoTitle}>Project Title</h3>
@@ -153,15 +157,15 @@ export default function Home() {
     return (
       <blockquote className={styles.quote}>
         <p>
-          "A heart anxious to learn is natural. Chasing the unknown, craving
-          comprehension - these are a person's indelible instincts. Nothing in
+          &quot;A heart anxious to learn is natural. Chasing the unknown, craving
+          comprehension - these are a person&apos;s indelible instincts. Nothing in
           this world can destroy the will to search for the unknown, an
           instinctive thirst for knowledge. As a person perseveres in this
           search, they will be able to change like a cocoon turning into a
-          butterfly."
+          butterfly.&quot;
         </p>
         <p>
-          - Li Qiye, <cite>Emperor's Domination</cite>
+          - Li Qiye, <cite>Emperor&apos;s Domination</cite>
         </p>
       </blockquote>
     );

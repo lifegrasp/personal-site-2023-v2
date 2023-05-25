@@ -17,7 +17,7 @@ export default function Archive() {
       <div className={styles.itemTwo}>
         <h1>Previous Iterations</h1>
         <p>
-          A curated archive of my personal site's versions, demonstrating the
+          A curated archive of my personal site&apos;s versions, demonstrating the
           growth and development of my digital presence.
         </p>
       </div>
@@ -30,7 +30,7 @@ export default function Archive() {
           While I cannot guarantee the full functionality of all links and
           images within this archive, I cordially invite you to take a leisurely
           stroll down memory lane, and explore the different stages of my
-          personal site's development throughout the years.
+          personal site&apos;s development throughout the years.
         </p>
       </div>
     );
