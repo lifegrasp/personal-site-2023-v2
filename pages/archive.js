@@ -61,7 +61,7 @@ export default function Archive() {
             <h3>{date}</h3>
             <Link href={repoUrl} target="_blank">
               <Image
-                src="/../public/svg/github.svg"
+                src="/svg/github.svg"
                 alt="GitHub logo"
                 width={500}
                 height={500}
@@ -76,14 +76,14 @@ export default function Archive() {
       <div className={styles.iterations}>
         <Archived
           date="2023 V2"
-          imgSrc="/../public/archive/2023-V2.png"
+          imgSrc="/archive/2023-V2.png"
           alt="2023 V1 iteration of the site"
           repoUrl="https://github.com/lifegrasp/personal-site-2023-v2"
           archUrl="/"
         />
         <Archived
           date="2023 V1"
-          imgSrc="/../public/archive/2023-V1.png"
+          imgSrc="/archive/2023-V1.png"
           alt="2023 V1 iteration of the site"
           repoUrl="https://github.com/lifegrasp/personal-site-2023"
           archUrl="/archive/2023-V1.html"

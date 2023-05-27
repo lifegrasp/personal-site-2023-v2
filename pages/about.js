@@ -19,7 +19,7 @@ export default function About() {
           <span>
             <p>React.js</p>
             <Image
-              src="/../public/svg/react.svg"
+              src="/svg/react.svg"
               alt="React logo"
               width={500}
               height={500}
@@ -28,7 +28,7 @@ export default function About() {
           <span>
             <p>Next.js</p>
             <Image
-              src="/../public/svg/next.svg"
+              src="/svg/next.svg"
               alt="Next logo"
               width={500}
               height={500}
@@ -37,7 +37,7 @@ export default function About() {
           <span>
             <p>Tailwind</p>
             <Image
-              src="/../public/svg/tailwind.svg"
+              src="/svg/tailwind.svg"
               alt="Tailwind CSS logo"
               width={500}
               height={500}
@@ -46,7 +46,7 @@ export default function About() {
           <span>
             <p>SASS</p>
             <Image
-              src="/../public/svg/sass.svg"
+              src="/svg/sass.svg"
               alt="SASS logo"
               width={500}
               height={500}

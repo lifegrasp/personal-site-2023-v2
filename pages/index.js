@@ -98,7 +98,7 @@ export default function Home() {
               <p className={styles.repoGridTwo}>{repoData.owner.login}</p>
               <Image
                 className={styles.repoGridThree}
-                src="/../public/svg/link.svg"
+                src="/svg/link.svg"
                 width={300}
                 height={300}
                 alt="link"
@@ -119,7 +119,7 @@ export default function Home() {
             <div className={styles.repoGrid}>
               <Image
                 className={styles.repoGridOne}
-                src="/../public/svg/user.svg"
+                src="/svg/user.svg"
                 width={300}
                 height={300}
                 alt="placeholder avtar"
@@ -127,7 +127,7 @@ export default function Home() {
               <p className={styles.repoGridTwo}>Author</p>
               <Image
                 className={styles.repoGridThree}
-                src="/../public/svg/link.svg"
+                src="/svg/link.svg"
                 width={300}
                 height={300}
                 alt="link"

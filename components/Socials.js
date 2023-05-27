@@ -18,19 +18,19 @@ export default function Socials() {
     <div className={styles.socials}>
       <Social
         link="https://github.com/lifegrasp"
-        imgSrc="/../public/svg/github.svg"
+        imgSrc="/svg/github.svg"
         alt="GitHub icon"
         tooltip="@lifegrasp"
       />
       <Social
         link="https://www.linkedin.com/in/henry-hart-alegrado-15953524b/"
-        imgSrc="/../public/svg/linkedin.svg"
+        imgSrc="/svg/linkedin.svg"
         alt="LinkedIn icon"
         tooltip="Henry Hart Alegrado"
       />
       <Social
         link="mailto:henryhartalegrado@gmail.com"
-        imgSrc="/../public/svg/mail.svg"
+        imgSrc="/svg/mail.svg"
         alt="Mail icon"
         tooltip="henryhartalegrado@gmail.com"
       />
