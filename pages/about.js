@@ -100,10 +100,10 @@ export default function About() {
           <div className={styles.exp}>
             <div className={styles.timeline}>
               <h3>Philippine Health Insurance Corporation</h3>
-              <h4>SEP 2022 - JAN 2023</h4>
+              <h4>SEP 2022 - FEB 2023</h4>
             </div>
             <div className={styles.position}>
-              <h4>IT Intern</h4>
+              <h4>IT Support Technician</h4>
               <ul>
                 <li>Assisting with technical support.</li>
                 <li>Assisting with data management.</li>
@@ -132,7 +132,7 @@ export default function About() {
           </div>
           <div className={styles.exp}>
             <div className={styles.timeline}>
-              <h3>Black Desert Online</h3>
+              <h3>Black Desert</h3>
               <h4>OCT 2018 - JAN 2022</h4>
             </div>
             <div className={styles.position}>
