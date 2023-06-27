@@ -105,9 +105,14 @@ export default function About() {
             <div className={styles.position}>
               <h4>IT Support Technician</h4>
               <ul>
-                <li>Assisting with technical support.</li>
-                <li>Assisting with data management.</li>
-                <li>Maintaining and updating hardware and software.</li>
+                <li>
+                  Providing technical support and troubleshooting assistance.
+                </li>
+                <li>Assisting with data management and organization</li>
+                <li>
+                  Performing regular maintenance and upgrades of hardware and
+                  software systems.
+                </li>
               </ul>
             </div>
           </div>
@@ -126,6 +131,10 @@ export default function About() {
                 <li>
                   Responsible for all matters concerning training, operations,
                   and plans at company level.
+                </li>
+                <li>
+                  Collaborated with senior officersr to address evolving needs
+                  and challenges.
                 </li>
               </ul>
             </div>
