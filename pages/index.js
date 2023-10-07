@@ -145,7 +145,6 @@ export default function Home() {
         <h2>Projects</h2>
         <div className={styles.displayedRepo}>
           <Repo user="lifegrasp" repo="personal-site-2023-v2" />
-          <Repo user="lifegrasp" repo="svci-rndas" />
           <Placeholder />
           <Placeholder />
         </div>
@@ -182,7 +181,7 @@ export default function Home() {
       <main>
         <div className={styles.home}>
           <Intro />
-          <Repositories />
+          {/* <Repositories /> */}
           <Quote />
         </div>
       </main>
