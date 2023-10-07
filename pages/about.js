@@ -99,11 +99,29 @@ export default function About() {
         <div className={styles.itemTwo}>
           <div className={styles.exp}>
             <div className={styles.timeline}>
+              <h3>Weigandt Consulting</h3>
+              <h4>AUG 2023 - SEP 2023</h4>
+            </div>
+            <div className={styles.position}>
+              <h4>Tech Support Engineer</h4>
+              <ul>
+                <li>Specialized technical support for complex issues.</li>
+                <li>
+                  Utilized Oracle SQL Developer for advanced data analysis.
+                </li>
+                <li>
+                  Conducted system maintenance for optimal client technology.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.exp}>
+            <div className={styles.timeline}>
               <h3>Philippine Health Insurance Corporation</h3>
               <h4>SEP 2022 - FEB 2023</h4>
             </div>
             <div className={styles.position}>
-              <h4>IT Support Technician</h4>
+              <h4>Tech Support Engineer</h4>
               <ul>
                 <li>
                   Providing technical support and troubleshooting assistance.
@@ -139,7 +157,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className={styles.exp}>
+          {/* <div className={styles.exp}>
             <div className={styles.timeline}>
               <h3>Black Desert</h3>
               <h4>OCT 2018 - JAN 2022</h4>
@@ -154,7 +172,7 @@ export default function About() {
                 <li>Organize and participate in events.</li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );
